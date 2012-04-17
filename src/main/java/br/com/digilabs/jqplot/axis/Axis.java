@@ -78,6 +78,9 @@ public class Axis<T extends Serializable> implements Serializable {
     
     /** The tick interval. */
     private T tickInterval;
+    
+    /**The border color*/
+    private String borderColor;
 
 
     /**
@@ -332,5 +335,23 @@ public class Axis<T extends Serializable> implements Serializable {
 	public void setMax(T max) {
 		this.max = max;
 	}
+
+	/**
+	 * Gets the borderColor
+	 * @return the borderColor
+	 */
+	public String getBorderColor() {
+		return borderColor;
+	}
+
+	/**
+	 * Sets the new borderColor
+	 * @param borderColor the new borderColor
+	 */
+	public void setBorderColor(String borderColor) {
+		this.borderColor = borderColor;
+	}
+	
+	
 
 }

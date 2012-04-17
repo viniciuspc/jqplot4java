@@ -111,6 +111,7 @@ public class LineSerieTest extends TestCase {
 		xaxis.setTickOptions(tickOptions);
 		xaxis.setTickRenderer(JqPlotResources.CanvasAxisTickRenderer);
 		xaxis.setTickInterval(1);
+		xaxis.setBorderColor("#ff0000");
 		
 		axes.getYaxis().setTickInterval(0.50);
 
