@@ -106,12 +106,14 @@ public class LineSerieTest extends TestCase {
 		TickOptions tickOptions = new TickOptions();
 		tickOptions.setAngle(270);
 		tickOptions.setLabelPosition("end");
+		tickOptions.setFormatString("%d");
 		
 		
 		xaxis.setTickOptions(tickOptions);
 		xaxis.setTickRenderer(JqPlotResources.CanvasAxisTickRenderer);
 		xaxis.setTickInterval(1);
 		xaxis.setBorderColor("#ff0000");
+	
 		
 		axes.getYaxis().setTickInterval(0.50);
 
@@ -122,6 +124,7 @@ public class LineSerieTest extends TestCase {
 
 		TickOptions tickOptionsY = new TickOptions();
 		tickOptionsY.setFormatString("%.2f");
+		
 		axes.getYaxis().setTickOptions(tickOptionsY);
 		
 		Grid grid = new Grid();
