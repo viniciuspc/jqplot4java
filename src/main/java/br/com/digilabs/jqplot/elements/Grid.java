@@ -242,7 +242,7 @@ public class Grid<T extends Serializable> implements Element {
      *
      * @param gridLineColer the new grid line color
      */
-    public void setGridLineColer(String gridLineColor) {
+    public void setGridLineColor(String gridLineColor) {
         this.gridLineColor = gridLineColor;
     }
 

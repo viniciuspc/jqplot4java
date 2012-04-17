@@ -8,17 +8,12 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 import junit.framework.TestCase;
-import br.com.digilabs.jqplot.Chart;
 import br.com.digilabs.jqplot.JqPlotResources;
 import br.com.digilabs.jqplot.JqPlotUtils;
 import br.com.digilabs.jqplot.axis.Axis;
-import br.com.digilabs.jqplot.axis.AxisNumber;
 import br.com.digilabs.jqplot.axis.AxisString;
 import br.com.digilabs.jqplot.axis.XAxis;
-import br.com.digilabs.jqplot.chart.LabeledLineChart;
-import br.com.digilabs.jqplot.chart.LineChart;
 import br.com.digilabs.jqplot.chart.LineSeriesChart;
-import br.com.digilabs.jqplot.data.ChartData;
 import br.com.digilabs.jqplot.data.item.LineSeriesItem;
 import br.com.digilabs.jqplot.elements.Axes;
 import br.com.digilabs.jqplot.elements.Cursor;
@@ -29,7 +24,6 @@ import br.com.digilabs.jqplot.elements.Location;
 import br.com.digilabs.jqplot.elements.MarkerOptions;
 import br.com.digilabs.jqplot.elements.Serie;
 import br.com.digilabs.jqplot.elements.TickOptions;
-import br.com.digilabs.jqplot.renderer.Renderer;
 
 /**
  *
@@ -131,7 +125,7 @@ public class LineSerieTest extends TestCase {
 		
 		Grid grid = new Grid();
 		grid.setBackground("#ffffff");
-		grid.setGridLineColer("#a0a0a0");
+		grid.setGridLineColor("#a0a0a0");
 		chart.getChartConfiguration().setGrid(grid);
 		Cursor cursor = new Cursor();
 		cursor.setZoom(true);
